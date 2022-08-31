@@ -185,6 +185,9 @@ func (j *jsiiProxy_ExternalProvider) TerraformResourceType() *string {
 func NewExternalProvider(scope constructs.Construct, id *string, config *ExternalProviderConfig) ExternalProvider {
 	_init_.Initialize()
 
+	if err := validateNewExternalProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ExternalProvider{}
 
 	_jsii_.Create(
@@ -207,7 +210,7 @@ func NewExternalProvider_Override(e ExternalProvider, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_ExternalProvider) SetAlias(val *string) {
+func (j *jsiiProxy_ExternalProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -235,6 +238,9 @@ func (j *jsiiProxy_ExternalProvider) SetAlias(val *string) {
 func ExternalProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateExternalProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -259,6 +265,9 @@ func ExternalProvider_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ExternalProvider) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -267,6 +276,9 @@ func (e *jsiiProxy_ExternalProvider) AddOverride(path *string, value interface{}
 }
 
 func (e *jsiiProxy_ExternalProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
