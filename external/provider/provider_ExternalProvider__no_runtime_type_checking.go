@@ -1,8 +1,7 @@
 //go:build no_runtime_type_checking
 // +build no_runtime_type_checking
 
-// Prebuilt external Provider for Terraform CDK (cdktf)
-package external
+package provider
 
 // Building without runtime type checking enabled, so all the below just return nil
 

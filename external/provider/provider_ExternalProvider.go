@@ -1,12 +1,11 @@
-// Prebuilt external Provider for Terraform CDK (cdktf)
-package external
+package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-external-go/external/v2/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-external-go/external/v3/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/cdktf-provider-external-go/external/v2/internal"
+	"github.com/hashicorp/cdktf-provider-external-go/external/v3/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -191,7 +190,7 @@ func NewExternalProvider(scope constructs.Construct, id *string, config *Externa
 	j := jsiiProxy_ExternalProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-external.ExternalProvider",
+		"@cdktf/provider-external.provider.ExternalProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -204,7 +203,7 @@ func NewExternalProvider_Override(e ExternalProvider, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-external.ExternalProvider",
+		"@cdktf/provider-external.provider.ExternalProvider",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -244,7 +243,7 @@ func ExternalProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-external.ExternalProvider",
+		"@cdktf/provider-external.provider.ExternalProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -257,7 +256,7 @@ func ExternalProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-external.ExternalProvider",
+		"@cdktf/provider-external.provider.ExternalProvider",
 		"tfResourceType",
 		&returns,
 	)

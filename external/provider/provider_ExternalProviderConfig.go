@@ -1,5 +1,4 @@
-// Prebuilt external Provider for Terraform CDK (cdktf)
-package external
+package provider
 
 
 type ExternalProviderConfig struct {

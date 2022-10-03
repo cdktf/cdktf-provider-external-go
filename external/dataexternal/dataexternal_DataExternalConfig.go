@@ -1,5 +1,4 @@
-// Prebuilt external Provider for Terraform CDK (cdktf)
-package external
+package dataexternal
 
 import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
