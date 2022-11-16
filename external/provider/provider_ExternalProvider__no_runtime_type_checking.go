@@ -16,6 +16,14 @@ func validateExternalProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExternalProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExternalProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func validateNewExternalProviderParameters(scope constructs.Construct, id *string, config *ExternalProviderConfig) error {
 	return nil
 }

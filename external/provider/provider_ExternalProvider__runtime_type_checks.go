@@ -38,6 +38,22 @@ func validateExternalProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExternalProvider_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateExternalProvider_IsTerraformProviderParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewExternalProviderParameters(scope constructs.Construct, id *string, config *ExternalProviderConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

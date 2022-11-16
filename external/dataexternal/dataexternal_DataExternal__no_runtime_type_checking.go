@@ -56,6 +56,14 @@ func validateDataExternal_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataExternal_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataExternal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataExternal) validateSetIdParameters(val *string) error {
 	return nil
 }
