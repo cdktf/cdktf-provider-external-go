@@ -64,10 +64,6 @@ func validateDataExternal_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataExternal) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataExternal) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
