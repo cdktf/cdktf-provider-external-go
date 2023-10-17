@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataExternal) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func validateDataExternal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataExternal_IsConstructParameters(x interface{}) error {
 	return nil
 }
