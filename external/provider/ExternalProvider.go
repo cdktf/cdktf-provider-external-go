@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs external}.
 type ExternalProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -186,7 +186,7 @@ func (j *jsiiProxy_ExternalProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs external} Resource.
 func NewExternalProvider(scope constructs.Construct, id *string, config *ExternalProviderConfig) ExternalProvider {
 	_init_.Initialize()
 
@@ -204,7 +204,7 @@ func NewExternalProvider(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs external} Resource.
 func NewExternalProvider_Override(e ExternalProvider, scope constructs.Construct, id *string, config *ExternalProviderConfig) {
 	_init_.Initialize()
 
