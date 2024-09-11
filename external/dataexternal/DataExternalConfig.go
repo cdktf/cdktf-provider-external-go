@@ -26,17 +26,17 @@ type DataExternalConfig struct {
 	//
 	// Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#program DataExternal#program}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.4/docs/data-sources/external#program DataExternal#program}
 	Program *[]*string `field:"required" json:"program" yaml:"program"`
 	// A map of string values to pass to the external program as the query arguments.
 	//
 	// If not supplied, the program will receive an empty object as its input.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#query DataExternal#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.4/docs/data-sources/external#query DataExternal#query}
 	Query *map[string]*string `field:"optional" json:"query" yaml:"query"`
 	// Working directory of the program. If not supplied, the program will run in the current directory.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#working_dir DataExternal#working_dir}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.4/docs/data-sources/external#working_dir DataExternal#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
 
